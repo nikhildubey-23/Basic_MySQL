@@ -121,3 +121,14 @@ output:-
         | systemctl    |
         +--------------+
 
+Applying filter using where clause :
+syntax:- select * from <table_name> where column_name ="value";
+example:- select * from coffee_table where rost = "medium";
+output:
+        +------+------------+----------+--------+
+        | id   | name       | region   | roast  |
+        +------+------------+----------+--------+
+        |    2 | docker_run | mexico   | medium |
+        |    3 | helpdesk   | honduras | medium |
+        +------+------------+----------+--------+
+
