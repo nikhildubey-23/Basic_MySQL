@@ -85,3 +85,25 @@ output:
 command number 5 for to put value inside the table:
 syntax:- insert into <table> value(put the value in same order as you set the row (id,name,region,roast));
 example :- insert into coffee_table value(1,"default_rout","ethopia","light");
+Inserting some more data inside the table to perform more operation.
+-->insert into coffee_table value(2,"docker_run","mexico","medium");
+-->insert into coffee_table value(3,"helpdesk","honduras","medium");
+-->insert into coffee_table value(4,"on_call","pern","dark");
+-->insert into coffee_table value(5,"ifconfig","indian","india);
+-->insert into coffee_table value(6,"systemctl","newzeland","ethernet);
+
+command number 6 , which we use to see the content present inside the table.
+syntax:- select * from coffee_table;
+output:- 
+        +------+--------------+-----------+----------+
+        | id   | name         | region    | roast    |
+        +------+--------------+-----------+----------+
+        |    1 | default_rout | ethopia   | light    |
+        |    2 | docker_run   | mexico    | medium   |
+        |    3 | helpdesk     | honduras  | medium   |
+        |    4 | on_call      | pern      | dark     |
+        |    5 | ifconfig     | indian    | india    |
+        |    6 | systemctl    | newzeland | ethernet |
+        +------+--------------+-----------+----------+
+
+
