@@ -48,8 +48,38 @@ as we can see in the database table we get the nick_coffee database also.
 command number 3 is use command , use command is use to use the database or you can say to go inside the database also.
 syntax: use nick_coffee;
 
+command number 4 is show tables; command , this command is use to see the tables present in database.
+syntax:- show tables;
+output:- Empty set (0.00 sec) //but as we know that till now we did not create any table so that's why we get this output.
 
-
-
+command number 5 create table command , this command is use to create a table.
+syntax :- create table <name_of_table>(
+    name_of_coloumn datatype options,
+    name_of_coloumn datatype options,
+);
+example:- create table coffee_table(
+    id int,
+    name varchar(100),
+    region varchar(100),
+    roast varchar(100)
+)
+output:- to see the output use the command show tables; command then you will get the result.
+        +-----------------------+
+        | Tables_in_nick_coffee |
+        +-----------------------+
+        | coffee_table          |
+        +-----------------------+
+and to get the more information about the table use the command:
+syntax: describe <table_name>;
+example: describe coffee_table;
+output: 
+    +--------+--------------+------+-----+---------+-------+
+    | Field  | Type         | Null | Key | Default | Extra |
+    +--------+--------------+------+-----+---------+-------+
+    | id     | int          | YES  |     | NULL    |       |
+    | name   | varchar(100) | YES  |     | NULL    |       |
+    | region | varchar(100) | YES  |     | NULL    |       |
+    | roast  | varchar(100) | YES  |     | NULL    |       |
+    +--------+--------------+------+-----+---------+-------+
 
 
