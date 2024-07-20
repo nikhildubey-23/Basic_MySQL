@@ -106,4 +106,18 @@ output:-
         |    6 | systemctl    | newzeland | ethernet |
         +------+--------------+-----------+----------+
 
+----> suppose we want to print any particular column 
+syntax:- select <column_name> form <table_name>;
+example:- select name form coffee_table;
+output:- 
+        +--------------+
+        | name         |
+        +--------------+
+        | default_rout |
+        | docker_run   |
+        | helpdesk     |
+        | on_call      |
+        | ifconfig     |
+        | systemctl    |
+        +--------------+
 
