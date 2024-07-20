@@ -1,0 +1,18 @@
+Command to install mysql in debian linux distribution:
+    sudo apt update & sudo apt upgrade
+    sudo apt install mysql-server
+
+Now check whether it is installed or not or it is working properly or not:
+    sudo systemctl status mysql
+
+if it is inactive use the command to activate
+    sudo systemctl start mysql
+
+for to use use the command:
+    mysql
+
+in output you will get something like this:
+mysql> 
+
+
+
