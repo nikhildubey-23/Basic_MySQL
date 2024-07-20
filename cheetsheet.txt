@@ -14,5 +14,20 @@ for to use use the command:
 in output you will get something like this:
 mysql> 
 
+starting with show databases command:
+    show databases command is use to the existing databases.
+    syntax:- show databases;
+    output:- 
+    +--------------------+
+    | Database           |
+    +--------------------+
+    | COLLEGE            |
+    | information_schema |
+    | mysql              |
+    | performance_schema |
+    | sys                |
+    +--------------------+
+    5 rows in set (0.04 sec)
+
 
 
