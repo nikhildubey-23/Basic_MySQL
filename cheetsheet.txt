@@ -30,9 +30,9 @@ starting with show databases command:
     5 rows in set (0.04 sec)
 
 Command number 2 is create database command which is use to create database:
-syntax:- create database <name of database>
-example :- create database nick_coffee
-output:- for to check the output use the show databases command 
+syntax:- create database <name of database>;
+example :- create database nick_coffee;
+output:- for to check the output use the show databases; command 
 +--------------------+
 | Database           |
 +--------------------+
@@ -44,6 +44,10 @@ output:- for to check the output use the show databases command
 | sys                |
 +--------------------+
 as we can see in the database table we get the nick_coffee database also.
+
+command number 3 is use command , use command is use to use the database or you can say to go inside the database also.
+syntax: use nick_coffee;
+
 
 
 
