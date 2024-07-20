@@ -52,7 +52,7 @@ command number 4 is show tables; command , this command is use to see the tables
 syntax:- show tables;
 output:- Empty set (0.00 sec) //but as we know that till now we did not create any table so that's why we get this output.
 
-command number 5 create table command , this command is use to create a table.
+command number 4 create table command , this command is use to create a table.
 syntax :- create table <name_of_table>(
     name_of_coloumn datatype options,
     name_of_coloumn datatype options,
@@ -82,4 +82,6 @@ output:
     | roast  | varchar(100) | YES  |     | NULL    |       |
     +--------+--------------+------+-----+---------+-------+
 
-
+command number 5 for to put value inside the table:
+syntax:- insert into <table> value(put the value in same order as you set the row (id,name,region,roast));
+example :- insert into coffee_table value(1,"default_rout","ethopia","light");
