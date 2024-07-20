@@ -132,3 +132,15 @@ output:
         |    3 | helpdesk   | honduras | medium |
         +------+------------+----------+--------+
 
+Suppose this time we want to apply two filter at the same time using where clause:
+syntax:- select * from <table_name> where <column_name>="value"or<column_name>="value";
+example:- select * from coffee_table where roast="medium" or roast="india";
+output:-
+        +------+------------+----------+--------+
+        | id   | name       | region   | roast  |
+        +------+------------+----------+--------+
+        |    2 | docker_run | mexico   | medium |
+        |    3 | helpdesk   | honduras | medium |
+        |    5 | ifconfig   | indian   | india  |
+        +------+------------+----------+--------+
+
