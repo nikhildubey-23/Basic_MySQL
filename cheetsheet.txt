@@ -144,3 +144,17 @@ output:-
         |    5 | ifconfig   | indian   | india  |
         +------+------------+----------+--------+
 
+now we try to filter using not clause:
+syntax: select * from <table_name> where not <column_name=value>;
+example: select * from coffee_table where not roast="medium";
+output:
+        +------+--------------+-----------+----------+
+        | id   | name         | region    | roast    |
+        +------+--------------+-----------+----------+
+        |    1 | default_rout | ethopia   | light    |
+        |    4 | on_call      | pern      | dark     |
+        |    5 | ifconfig     | indian    | india    |
+        |    6 | systemctl    | newzeland | ethernet |
+        +------+--------------+-----------+----------+
+        4 rows in set (0.00 sec)
+  
