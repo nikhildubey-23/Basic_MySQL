@@ -176,4 +176,26 @@ output:
         | age    | int          | YES  |     | NULL    |       |
         +--------+--------------+------+-----+---------+-------+
 
+Updating the new added column using update keyword:
+syntax:
+    update <table_name> set <column_name_for_to_add_or_change_the_value>=<value> where <old_column_name_for_reference> = <value>
+example:
+    update coffee_table set age = 8 where name = "systemctl";
+    ///same we do with other rows also to add the value in age column.
+output:
+    to see the output use the command:
+        select * from coffee_table;
+        +------+--------------+-----------+----------+------+
+        | id   | name         | region    | roast    | age  |
+        +------+--------------+-----------+----------+------+
+        |    1 | default_rout | ethopia   | light    |   40 |
+        |    2 | docker_run   | mexico    | medium   |   56 |
+        |    3 | helpdesk     | honduras  | medium   |   30 |
+        |    4 | on_call      | pern      | dark     |   34 |
+        |    5 | ifconfig     | indian    | india    |   14 |
+        |    6 | systemctl    | newzeland | ethernet |    8 |
+        +------+--------------+-----------+----------+------+
+
+
+
     
