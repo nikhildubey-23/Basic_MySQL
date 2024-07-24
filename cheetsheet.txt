@@ -196,6 +196,21 @@ output:
         |    6 | systemctl    | newzeland | ethernet |    8 |
         +------+--------------+-----------+----------+------+
 
+ordering our table in ascending or descending order using "order by" keyword;
+syntax:
+    select * from <table_name> order by <column_name_whome_we_want_to_take_as_a_reference_order>asc; /////for to arrange in ascending order and for to arrange in descending order just replace the asc to desc.
+example: in this example i am taking age as a reference column to change its value in ascending order.
+    select * from coffee_table order by age asc;
+    +------+--------------+-----------+----------+------+
+    | id   | name         | region    | roast    | age  |
+    +------+--------------+-----------+----------+------+
+    |    6 | systemctl    | newzeland | ethernet |    8 |
+    |    5 | ifconfig     | indian    | india    |   14 |
+    |    3 | helpdesk     | honduras  | medium   |   30 |
+    |    4 | on_call      | pern      | dark     |   34 |
+    |    1 | default_rout | ethopia   | light    |   40 |
+    |    2 | docker_run   | mexico    | medium   |   56 |
+    +------+--------------+-----------+----------+------+
 
 
     
