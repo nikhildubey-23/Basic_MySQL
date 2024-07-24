@@ -158,3 +158,22 @@ output:
         +------+--------------+-----------+----------+
         4 rows in set (0.00 sec)
   
+Adding new column to perform rest of the operation operation.
+so for to add new column we use the alter command:
+syntax:
+    alter table <table_name> add <new_column_name> <datatype>;
+example:
+    alter table coffee_table add age int;
+output:
+    To see the output we use the describe keyword (describe coffee_table;)
+        +--------+--------------+------+-----+---------+-------+
+        | Field  | Type         | Null | Key | Default | Extra |
+        +--------+--------------+------+-----+---------+-------+
+        | id     | int          | YES  |     | NULL    |       |
+        | name   | varchar(100) | YES  |     | NULL    |       |
+        | region | varchar(100) | YES  |     | NULL    |       |
+        | roast  | varchar(100) | YES  |     | NULL    |       |
+        | age    | int          | YES  |     | NULL    |       |
+        +--------+--------------+------+-----+---------+-------+
+
+    
